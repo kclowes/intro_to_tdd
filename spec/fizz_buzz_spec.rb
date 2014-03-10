@@ -10,5 +10,5 @@ describe "Fizz_Buzz" do
     actual = fizzbuzz.arrayify
 
     expect(actual).to eq expected
-  end
+    end
   end
