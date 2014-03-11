@@ -15,4 +15,9 @@ class NumericCalculator
       @@array[0]
     end
   end
+  def clear(n)
+    if n == "clear"
+      @@array = 0
+    end
+  end
 end

@@ -26,5 +26,11 @@ describe "numeric_calculator" do
     actual = ret.get("return")
     expect(actual).to eq(expected)
   end
+  it "clears the calculator's memory and sets the value of the array to zero" do
+    cl = NumericCalculator.new()
+    expected = 0
+    actual = cl.clear("clear")
+    expect(actual).to eq(expected)
+  end
 end
 
