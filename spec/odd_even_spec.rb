@@ -9,5 +9,12 @@ describe "odd_even" do
     actual = arr.arrayify
     expect(actual).to eq expected
   end
+  it "replaces even numbers in an array with the word 'even'" do
+    arr = OddEven.new(10)
+
+    expected = [1, "even", 3, "even", 5, "even", 7, "even", 9, "even"]
+    actual = arr.arrayify
+    expect(actual).to eq expected
+  end
 end
 
