@@ -1,4 +1,6 @@
 class NumericCalculator
+  array = Array.new
+  @@array = array
   def add(x, y)
     x + y
   end
@@ -6,7 +8,11 @@ class NumericCalculator
     x - y
   end
   def save(n)
-    array = []
-    array << 5
+    @@array << n
+  end
+  def get(n)
+    if n == "return"
+      @@array[0]
+    end
   end
 end

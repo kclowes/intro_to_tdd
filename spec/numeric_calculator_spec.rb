@@ -20,5 +20,11 @@ describe "numeric_calculator" do
     actual = s.save(5)
     expect(actual).to eq(expected)
   end
+  it "returns a saved number from the computer's memory" do
+    ret = NumericCalculator.new()
+    expected = 5
+    actual = ret.get("return")
+    expect(actual).to eq(expected)
+  end
 end
 
