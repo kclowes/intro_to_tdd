@@ -6,6 +6,8 @@ describe "key_value" do
   it "allows a user to add a value stored under a key" do
   hash = Key_Value.new(:three, 3)
 
+  #hash.make_hash(:three, 3)
+
   expected = {:three => 3}
 
   actual = hash.make_hash
@@ -20,9 +22,9 @@ describe "key_value" do
   end
 
   it "allows a user to delete a key" do
-  delete = Key_value("d",)
+  delete = Key_value.new
 
-  expected = 1
+  expected = nil
   actual = delete.delete_hash
   expect(actual).to eq expected
   end
