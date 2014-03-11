@@ -1,13 +1,13 @@
 require 'rspec/core'
-require '../lib/leap_year'
 
-Describe "Leap_Year" do
+require "leap_year"
+describe "Leap_Year" do
   it "Calls a method to see if the year is a leap year" do
-  leapyear = LeapYear.new(2014)
+  leapyear = LeapYear.new(1900)
 
-  expected = false
+  expected = "Not a leap year"
 
-  actual = leapyear.is_it_a_leap_year
+  actual = leapyear.yes?
 
   expect(actual).to eq(expected)
   end

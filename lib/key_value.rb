@@ -5,9 +5,9 @@ class Key_Value
   end
 
   def make_hash
-    new_hash = Hash.new
-    new_hash[@key] = @value
-    return new_hash
+    @new_hash = Hash.new
+    @new_hash[@key] = @value
+    return @new_hash
   end
 
   def get_hash
@@ -15,12 +15,15 @@ class Key_Value
   end
 
   def delete_hash
-    if (@key == "d" && @value == "d")
-      return nil
-    end
-    else
-      return "not deleted"
-    end
+   @new_hash.delete(@key)
+  end
+   # if (@key == "d" && @value == "d")
+   #   return nil
+   # end
+      #there is a delete method of hash that takes the key
+   # else
+   #   return "not deleted"
+   # end
 end
 
 #add()
