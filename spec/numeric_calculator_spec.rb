@@ -13,7 +13,12 @@ describe "numeric_calculator" do
     expected = 1
     actual = diff.difference(4, 3)
     expect(actual).to eq(expected)
-end
-
+  end
+  it "saves a number in the calculator's memory" do
+    s = NumericCalculator.new()
+    expected = [5]
+    actual = s.save(5)
+    expect(actual).to eq(expected)
+  end
 end
 
