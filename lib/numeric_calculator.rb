@@ -10,14 +10,10 @@ class NumericCalculator
   def save(n)
     @@array << n
   end
-  def get(n)
-    if n == "return"
-      @@array[0]
-    end
+  def get
+    @@array[0]
   end
-  def clear(n)
-    if n == "clear"
-      @@array = 0
-    end
+  def clear
+    @@array = 0
   end
 end

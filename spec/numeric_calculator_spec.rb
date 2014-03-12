@@ -23,13 +23,13 @@ describe "numeric_calculator" do
   it "returns a saved number from the computer's memory" do
     ret = NumericCalculator.new()
     expected = 5
-    actual = ret.get("return")
+    actual = ret.get()
     expect(actual).to eq(expected)
   end
   it "clears the calculator's memory and sets the value of the array to zero" do
     cl = NumericCalculator.new()
     expected = 0
-    actual = cl.clear("clear")
+    actual = cl.clear()
     expect(actual).to eq(expected)
   end
 end
